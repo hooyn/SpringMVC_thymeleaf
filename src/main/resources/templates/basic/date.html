@@ -3,27 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
 <h1>LocalDateTime</h1>
-<ul>
-  <li>default = <span th:text="${localDateTime}"></span></li>
-  <li>yyyy-MM-dd HH:mm:ss = <span th:text="${#temporals.format(localDateTime,'yyyy-MM-dd HH:mm:ss')}"></span></li>
+<ul class="list-group">
+  <li class="list-group-item">default = <span class="badge badge-pill badge-secondary" th:text="${localDateTime}"></span></li>
+  <li class="list-group-item">yyyy-MM-dd HH:mm:ss = <span class="badge badge-pill badge-secondary" th:text="${#temporals.format(localDateTime,'yyyy-MM-dd HH:mm:ss')}"></span></li>
 </ul>
 <h1>LocalDateTime - Utils</h1>
-<ul>
-  <li>${#temporals.day(localDateTime)} = <span th:text="${#temporals.day(localDateTime)}"></span></li>
-  <li>${#temporals.month(localDateTime)} = <span th:text="${#temporals.month(localDateTime)}"></span></li>
-  <li>${#temporals.monthName(localDateTime)} = <span th:text="${#temporals.monthName(localDateTime)}"></span></li>
-  <li>${#temporals.monthNameShort(localDateTime)} = <span th:text="${#temporals.monthNameShort(localDateTime)}"></span></li>
-  <li>${#temporals.year(localDateTime)} = <span th:text="${#temporals.year(localDateTime)}"></span></li>
-  <li>${#temporals.dayOfWeek(localDateTime)} = <span th:text="${#temporals.dayOfWeek(localDateTime)}"></span></li>
-  <li>${#temporals.dayOfWeekName(localDateTime)} = <span th:text="${#temporals.dayOfWeekName(localDateTime)}"></span></li>
-  <li>${#temporals.dayOfWeekNameShort(localDateTime)} = <span th:text="${#temporals.dayOfWeekNameShort(localDateTime)}"></span></li>
-  <li>${#temporals.hour(localDateTime)} = <span th:text="${#temporals.hour(localDateTime)}"></span></li>
-  <li>${#temporals.minute(localDateTime)} = <span th:text="${#temporals.minute(localDateTime)}"></span></li>
-  <li>${#temporals.second(localDateTime)} = <span th:text="${#temporals.second(localDateTime)}"></span></li>
-  <li>${#temporals.nanosecond(localDateTime)} = <span th:text="${#temporals.nanosecond(localDateTime)}"></span></li>
+<ul class="list-group">
+  <li class="list-group-item">${#temporals.day(localDateTime)} = <span class="badge badge-pill badge-secondary" th:text="${#temporals.day(localDateTime)}"></span></li>
+  <li class="list-group-item">${#temporals.month(localDateTime)} = <span class="badge badge-pill badge-secondary" th:text="${#temporals.month(localDateTime)}"></span></li>
+  <li class="list-group-item">${#temporals.monthName(localDateTime)} = <span class="badge badge-pill badge-secondary" th:text="${#temporals.monthName(localDateTime)}"></span></li>
+  <li class="list-group-item">${#temporals.monthNameShort(localDateTime)} = <span class="badge badge-pill badge-secondary" th:text="${#temporals.monthNameShort(localDateTime)}"></span></li>
+  <li class="list-group-item">${#temporals.year(localDateTime)} = <span class="badge badge-pill badge-secondary" th:text="${#temporals.year(localDateTime)}"></span></li>
+  <li class="list-group-item">${#temporals.dayOfWeek(localDateTime)} = <span class="badge badge-pill badge-secondary" th:text="${#temporals.dayOfWeek(localDateTime)}"></span></li>
+  <li class="list-group-item">${#temporals.dayOfWeekName(localDateTime)} = <span class="badge badge-pill badge-secondary" th:text="${#temporals.dayOfWeekName(localDateTime)}"></span></li>
+  <li class="list-group-item">${#temporals.dayOfWeekNameShort(localDateTime)} = <span class="badge badge-pill badge-secondary" th:text="${#temporals.dayOfWeekNameShort(localDateTime)}"></span></li>
+  <li class="list-group-item">${#temporals.hour(localDateTime)} = <span class="badge badge-pill badge-secondary" th:text="${#temporals.hour(localDateTime)}"></span></li>
+  <li class="list-group-item">${#temporals.minute(localDateTime)} = <span class="badge badge-pill badge-secondary" th:text="${#temporals.minute(localDateTime)}"></span></li>
+  <li class="list-group-item">${#temporals.second(localDateTime)} = <span class="badge badge-pill badge-secondary" th:text="${#temporals.second(localDateTime)}"></span></li>
+  <li class="list-group-item">${#temporals.nanosecond(localDateTime)} = <span class="badge badge-pill badge-secondary" th:text="${#temporals.nanosecond(localDateTime)}"></span></li>
 </ul>
 </body>
 </html>

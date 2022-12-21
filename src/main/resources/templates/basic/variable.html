@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
 <h1>SpringEL 표현식</h1>
-<ul>Object
-    <li>${user.username} = <span th:text="${user.username}"></span></li>
-    <li>${user['username']} = <span th:text="${user['username']}"></span></li>
-    <li>${user.getUsername()} = <span th:text="${user.getUsername()}"></span></li>
+<ul class="list-group"><h3>Object</h3>
+    <li class="list-group-item">${user.username} = <span class="badge badge-pill badge-secondary" th:text="${user.username}"></span></li>
+    <li class="list-group-item">${user['username']} = <span class="badge badge-pill badge-secondary" th:text="${user['username']}"></span></li>
+    <li class="list-group-item">${user.getUsername()} = <span class="badge badge-pill badge-secondary" th:text="${user.getUsername()}"></span></li>
 </ul>
-<ul>List
-    <li>${users[0].username} = <span th:text="${users[0].username}"></span></li>
-    <li>${users[0]['username']} = <span th:text="${users[0]['username']}"></span></li>
-    <li>${users[0].getUsername()} = <span th:text="${users[0].getUsername()}"></span></li>
+<ul class="list-group"><h3>List</h3>
+    <li class="list-group-item">${users[0].username} = <span class="badge badge-pill badge-secondary" th:text="${users[0].username}"></span></li>
+    <li class="list-group-item">${users[0]['username']} = <span class="badge badge-pill badge-secondary" th:text="${users[0]['username']}"></span></li>
+    <li class="list-group-item">${users[0].getUsername()} = <span class="badge badge-pill badge-secondary" th:text="${users[0].getUsername()}"></span></li>
 </ul>
-<ul>Map
-    <li>${userMap['userA'].username} = <span th:text="${userMap['userA'].username}"></span></li>
-    <li>${userMap['userA']['username']} = <span th:text="${userMap['userA']['username']}"></span></li>
-    <li>${userMap['userA'].getUsername()} = <span th:text="${userMap['userA'].getUsername()}"></span></li>
+<ul class="list-group"><h3>Map</h3>
+    <li class="list-group-item">${userMap['userA'].username} = <span class="badge badge-pill badge-secondary" th:text="${userMap['userA'].username}"></span></li>
+    <li class="list-group-item">${userMap['userA']['username']} = <span class="badge badge-pill badge-secondary" th:text="${userMap['userA']['username']}"></span></li>
+    <li class="list-group-item">${userMap['userA'].getUsername()} = <span class="badge badge-pill badge-secondary" th:text="${userMap['userA'].getUsername()}"></span></li>
 </ul>
-
+<br>
 <h1>지역 변수 - (th:with)</h1>
 <div th:with="first=${users[0]}">
-    <p>처음 사람의 이름은 <span th:text="${first.username}"></span></p>
+    <p>처음 사람의 이름은 <span class="badge badge-pill badge-secondary" th:text="${first.username}"></span></p>
 </div>
 
 </body>
